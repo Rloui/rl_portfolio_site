@@ -8,4 +8,4 @@ Roger Louisaire Portfolio
     - is functional for all screen sizes
     - link purchased URL
 
-Thinking of Using gastby
+- this was the first draft
