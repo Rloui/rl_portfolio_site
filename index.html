@@ -1,89 +1,367 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-    <title>Document</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,700;0,900;1,200;1,300&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/svg" href="img/rl_logo_blue.svg">
+
+    <title>Roger Louisaire | Full Stack Engineer</title>
 </head>
-<div class="container">
-    <header>
-
-    </header>
-    
     <body>
-        <h1>Roger Louisaire Portfolio</h1>
-        <img src="https://i.imgur.com/ZZQGVcK.jpg">
-        <div class="bio-container">
-            <h3>Bio</h3>
-            <div class="bio">
-                <p>
-                    I am a Software Engineer with a background in applied physics and civil engineering. I use my experience in research and engineering in combination with my skills in full-stack programming languages to build impactful and user-friendly web and mobile applications. My goal is to bring my passion for technology to aid and develop innovative technical solutions.
+
+        <header class="header" id="particles-js">
+            <div class="navigation">
+                <div class="header__logo-box">
+                    <img src="img/rl_logo-white.svg" alt="Logo" class="header__logo-white">
+                </div>
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="#about" class="navigation__link">About</a></li>
+                    <li class="navigation__item"><a href="#technologies" class="navigation__link">Technologies</a></li>
+                    <li class="navigation__item"><a href="#projects" class="navigation__link">Projects</a></li>
+                    <li class="navigation__item"><a href="#resume-contact" class="navigation__link">Resume</a></li>
+                    <li class="navigation__item"><a href="#resume-contact" class="navigation__link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="header__text-box">
+                <h1 class="heading-primary">
+                    <span class="heading-primary--main"><i>My name is<br>Roger Louisaire</i></span>
+                    <span class="heading-primary--sub">The Full Stack Web Developer</span>
+                </h1>
+                
+                <a href="#about" class="btn btn--orange btn--animated">Dive Deeper <span class="btn__forward-arrow">&rarr;</span>
+                </a>
+            </div>
+        </header>
+
+        <main>
+
+            <section class="section__about" id="about">
+                <div class="u-center-text u-margin-bottom-big">
+                    <h2 class="heading-secondary">
+                        About Me
+                    </h2>
+                </div>
+                <div class="row">
+                    <div class="col-1-of-2">
+                        <div class="aboutme">
+                            <img src="img/headshot_roger_louisaire.jpg" alt="Roger Louisaire Photo" class="aboutme__photo">
+                        </div>
+                    </div>
+                    <div class="col-1-of-2">
+                        <div class="aboutme__text">
+                            <h3 class="heading-tertiary u-margin-bottom-big">
+                                Allow me to intoduce myself
+                            </h3>
+                            <div class="aboutme__paragraph">
+                                <p class="paragraph">
+                                    I’m Roger a Software Engineer with a background in applied physics and civil engineering. I use my experience in research and engineering in combination with my skills in Full Stack programming languages to build impactful and user-friendly web and mobile applications. My goal is to bring my passion for technology to aid and develop innovative technical solutions.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-tech-summary">
+                <div class="row">
+                    <div class="col-1-of-3">
+                        <div class="tech-summary">
+                            <h3 class="heading-tertiary__tech-summary u-margin-bottom-medium">Front-end &#38; Design</h3>
+                            <div class="tech-summary__image-container">
+                                <img src="img/summary-icons/iconmonstr-computer-grey.svg" alt="Computer Icon" class="tech-summary__icon">
+                            </div>
+                            <ul class="tech-summary__list u-margin-top-small">
+                                <li class="tech-summary__item">HTML 5</li>
+                                <li class="tech-summary__item">CSS 3</li>
+                                <li class="tech-summary__item">Sass</li>
+                                <li class="tech-summary__item">Figma</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-1-of-3">
+                        <div class="tech-summary">
+                            <h3 class="heading-tertiary__tech-summary u-margin-bottom-medium">Languages &#38; Stack</h3>
+                            <div class="tech-summary__image-container">
+                                <img src="img/summary-icons/iconmonstr-diamond-gray.svg" alt="Computer Icon" class="tech-summary__icon">
+                            </div>
+                            <ul class="tech-summary__list u-margin-top-small">
+                                <li class="tech-summary__item">JavaScript</li>
+                                <li class="tech-summary__item">Python</li>
+                                <li class="tech-summary__item">React</li>
+                                <li class="tech-summary__item">&nbsp;</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-1-of-3">
+                        <div class="tech-summary">
+                            <h3 class="heading-tertiary__tech-summary u-margin-bottom-medium">Back-end</h3>
+                            <div class="tech-summary__image-container">
+                                <img src="img/summary-icons/iconmonstr-database-thin-grey.svg" alt="Computer Icon" class="tech-summary__icon">
+                            </div>
+                            <ul class="tech-summary__list u-margin-top-small">
+                                <li class="tech-summary__item">PostgreSQL</li>
+                                <li class="tech-summary__item">MongoDB</li>
+                                <li class="tech-summary__item">Node JS</li>
+                                <li class="tech-summary__item">Flask</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-technologies" id="technologies">
+                <div class="u-center-text u-margin-bottom-big">
+                    <h2 class="heading-secondary">
+                        Technologies
+                    </h2>
+                </div>
+                <div class="row">
+                    <div class="section-technologies__image-flexbox">
+                        <div class="section-technologies__image-holder">
+                            <img src="img/skills/Quote/Method/lang-JavaScript.svg" alt="Javascript Image" class="section-technologies__image">
+                            <p>JavaScript</p>
+                        </div>
+                        <div class="section-technologies__image-holder">
+                            <img src="img/skills/Quote/Method/lang-Python.svg" alt="Python Image" class="section-technologies__image">
+                            <p>Python</p>
+                        </div>
+                        <div class="section-technologies__image-holder">
+                            <img src="img/skills/Quote/Method/lang-React.svg" alt="React.js Image" class="section-technologies__image">
+                            <p>React.js</p>
+                        </div>
+                        <div class="section-technologies__image-holder">
+                            <img src="img/skills/Quote/Method/lang-jquery.svg" alt="JQuery Image" class="section-technologies__image">
+                            <p>JQuery</p>
+                        </div>
+                        <div class="section-technologies__image-holder">
+                            <img src="img/skills/Quote/Method/lang-mongodb.svg" alt="MongoDB Image" class="section-technologies__image">
+                            <p>MongoDB</p>
+                        </div>
+                        <div class="section-technologies__image-holder">
+                            <img src="img/skills/Quote/Method/lang-PostgreSQL.svg" alt="PostgreSQL Image" class="section-technologies__image">
+                            <p>PostgreSQL</p>
+                        </div>
+                    </div>
+                    <div class="section-technologies__image-flexbox">
+                        <div class="section-technologies__image-holder">
+                            <img src="img/skills/Quote/Method/lang-node-js.svg" alt="Node.js Image" class="section-technologies__image">
+                            <p>Node.js</p>
+                        </div>
+                        <div class="section-technologies__image-holder">
+                            <img src="img/skills/Quote/Method/lang-Expressjs.svg" alt="Express.js Image" class="section-technologies__image">
+                            <p>Express.js</p>
+                        </div>
+                        <div class="section-technologies__image-holder">
+                            <img src="img/skills/Quote/Method/lang-postman.svg" alt="Postman Image" class="section-technologies__image">
+                            <p>Postman</p>
+                        </div>
+                        <div class="section-technologies__image-holder">
+                            <img src="img/skills/Quote/Method/lang-Git-Icon.svg" alt="Git Image" class="section-technologies__image">
+                            <p>Git</p>
+                        </div>
+                        <div class="section-technologies__image-holder">
+                            <img src="img/skills/Quote/Method/lang-github.svg" alt="Github Image" class="section-technologies__image">
+                            <p>Github</p>
+                        </div>
+                        <div class="section-technologies__image-holder">
+                            <img src="img/skills/Quote/Method/lang-Flask.svg" alt="Flask Image" class="section-technologies__image">
+                            <p>Flask</p>
+                        </div>
+                    </div>
+                    <div class="section-technologies__image-flexbox">
+                        <div class="section-technologies__image-holder">
+                            <img src="img/skills/Quote/Method/lang-html5.svg" alt="HTML5 Image" class="section-technologies__image">
+                            <p>HTML5</p>
+                        </div>
+                        <div class="section-technologies__image-holder">
+                            <img src="img/skills/Quote/Method/lang-css.svg" alt="CSS3 Image" class="section-technologies__image">
+                            <p>CSS3</p>
+                        </div>
+                        <div class="section-technologies__image-holder">
+                            <img src="img/skills/Quote/Method/lang-Sass.svg" alt="Sass Image" class="section-technologies__image">
+                            <p>Sass</p>
+                        </div>
+                        <div class="section-technologies__image-holder">
+                            <img src="img/skills/Quote/Method/lang-Bootstrap.svg" alt="Bootstrap Image" class="section-technologies__image">
+                            <p>Bootstrap</p>
+                        </div>
+                        <div class="section-technologies__image-holder">
+                            <img src="img/skills/Quote/Method/lang-heroku.svg" alt="Heroku Image" class="section-technologies__image">
+                            <p>Heroku</p>
+                        </div>
+                        <div class="section-technologies__image-holder">
+                            <img src="img/skills/Quote/Method/lang-mvc.svg" alt="MVC Architecure Image" class="section-technologies__image">
+                            <p>MVC Architecure</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-projects" id="projects">
+                <div class="u-center-text u-margin-bottom-medium">
+                    <h2 class="heading-secondary">
+                        Projects
+                    </h2>
+                </div>
+                <div class="app-screenshot__flex">
+                    <div class="col-1-of-3 app-screenshot__container">
+                            <h3 class="heading-tertiary u-margin-bottom-medium">Stress</h3>
+                            <a href="https://rloui.github.io/stressgame/" target="_blank" rel="noopener noreferrer">
+                                <img src="img/resized-app-shots/stress-card-game_home.png" alt="Stress Card Game" class="app-screenshot__photo">
+                            </a>
+                    </div>
+                    <div class="col-1-of-3 app-screenshot__container">
+                            <h3 class="heading-tertiary u-margin-bottom-medium">Cocktails</h3>
+                            <a href="https://ga-project3-client.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                                <img src="img/app_screenshots/cocktailsDB_home.png" alt="Cocktails" class="app-screenshot__photo">
+                            </a>
+                    </div>
+                    <div class="col-1-of-3 app-screenshot__container">
+                            <h3 class="heading-tertiary u-margin-bottom-medium">Business Directory</h3>
+                            <a href="https://blkdirectory.herokuapp.com/blk" target="_blank" rel="noopener noreferrer">
+                                <img src="img/app_screenshots/black-business-directory-home.png" alt="BLK Business Directory" class="app-screenshot__photo">
+                            </a>
+                    </div>
+                </div>
+                <div class="app-screenshot__flex">
+                    <div class="col-1-of-3 app-screenshot__container">
+                            <h3 class="heading-tertiary u-margin-bottom-medium">Omnifood</h3>
+                            <img src="img/app_screenshots/omnifood_home.png" alt="Stress Card Game" class="app-screenshot__photo">
+                    </div>
+                    <div class="col-1-of-3 app-screenshot__container">
+                            <h3 class="heading-tertiary u-margin-bottom-medium">RL Portfolio</h3>
+                            <a href="https://rloui.github.io/roger_louisaire/" target="_blank" rel="noopener noreferrer">
+                                <img src="img/resized-app-shots/roger-portfolio_home2.png" alt="RL Portfolio" class="app-screenshot__photo">
+                            </a>
+                    </div>
+                    <div class="col-1-of-3 app-screenshot__container">
+                            <h3 class="heading-tertiary u-margin-bottom-medium">Natours</h3>
+                            <img src="img/app_screenshots/natours_home.png" alt="Natours" class="app-screenshot__photo">
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-resume-contact" id="resume-contact">
+                <div class="u-center-text u-margin-bottom-big">
+                    <h2 class="heading-secondary heading-secondary--resume-contact">
+                        Lets work together
+                    </h2>
+                </div>
+                <div class="row">
+                    <div class="col-1-of-2 resume-contact">
+                        <h3 class="heading-tertiary u-margin-bottom-medium">Resume</h3>
+                        <div class="resume-contact__image-container">
+                            <div class="resume-contact__photo"></div>
+                            <a href="https://drive.google.com/file/d/1Idpeyv5wfxmi_s5CIsY_yCMC9QqQgpPa/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn--orange resume-contact__image-container-link">View PDF</a>
+                        </div>
+                    </div>
+                    <div class="col-1-of-2 resume-contact">
+                        <h3 class="heading-tertiary u-margin-bottom-medium">Contact</h3>
+                        <div class="resume-contact__text">
+                            <p class="paragraph paragraph-white">If you like my work, have any questions, or a cool idea, just send me a direct message or connect with me on linkedIn. I'd love to hear more and work with you!</p>
+                        </div>
+                        <a href="mailto: rogerlouisaire@gmail.com" target="_blank" rel="noopener noreferrer" class="btn btn--orange resume-contact__link">Get In Touch <spanicon>&#9993;</spanicon></a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__logo-box">
+                <a href="#"><img src="img/rl_logo_gradient.svg" alt="RL Logo" class="footer__logo"></a>
+            </div>
+            <div class="row">
+                <p class="footer__copyright">
+                    &copy;2021 <span>Roger Louisaire</span> All Rights Reserved<br>This website was Designed and Built by Roger Louisaire.
                 </p>
-            </div>
-            
-            <a href="https://drive.google.com/file/d/16arGuFQ6PEh2UP05p11lJFIJ6yd8AlMA/view?usp=sharing">Checkout My Resume Here</a>
-
-        </div>
-        <div>
-            <div class="list-container">
-                <h2>Project 1: Stress Card Game</h2>
-                <a href="https://rloui.github.io/stressgame/">View Stress Here</a>
-                <div class="list">
-                    <ul class="description">
-                        <li>Built a matching card game application using Front-end technologies: JavaScript, HTML5, and CSS
-                        </li>
-                        <li>Used JQuery to render JavaScript data to HTML displaying the game deck and player cards in real-time
-                        </li>
-                        <li>Programmed  JavaScript Algorithms and Created Dynamic Data Structures that allowed users to interact with in-game card data (ex: shuffle, deal, swap)
-                        </li>
+                <div class="footer__navigation">
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="https://linkedin.com/in/rogerlouisaire" target="_blank" rel="noopener noreferrer" class="footer__link footer__link-linkedin"><img src="img/iconmonstr-linkedin-2.svg" alt="LinkedIn Image" class="footer__icon">Connect with me on Linkedin</a></li>
+                        <li class="footer__item"><a href="https://github.com/Rloui" target="_blank" rel="noopener noreferrer" class="footer__link footer__link-github"><img src="img/iconmonstr-github-2.svg" alt="Github Image" class="footer__icon">Take a look at my github</a></li>
                     </ul>
                 </div>
-            </div>
-            <div class="list-container">
-                <h2>Project 2: Blk Business Directory/Network</h2>
-                <a href="https://blkdirectory.herokuapp.com/blk">View Blk Business Directory Here</a>
-                <div class="list">
-                    <ul class="description">
-                        <li>Utilized JavaScript, MongoDB, HTML5, and CSS to develop a full stack business-oriented social application
-                        </li>
-                        <li>Organized application using REST architectural structure and MVC Framework, tested routes with Postman
-                        </li>
-                        <li>Created wireframes for the application and collaborated with a UX/UI designer on Figma to develop and implement responsive web design and user interface
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="list-container">
-                <h2>Project 3: Cocktails DB</h2>
-                <a href="https://ga-project3-client.herokuapp.com/">View CocktailDB Here</a>
-                <div class="list">
-                    <ul class="description">
-                        <li>Built a React app that helps users search, create, and edit cocktail beverages that are appealing to them
-                        </li>
-                        <li>Implemented full CRUD functionality using MERN stack technologies (Mongo, Express, React, Node)
-                        </li>
-                        <li>Integrated 3rd party APIs and created a users API with matching Database Schemas hosted on Heroku Cloud
-                        </li>
-                        <li>Applied Agile Methodologies in a team to create a collaborative workflow while meeting the M.V.P.
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="list-container">
-                <h2>Project 4: Trava</h2>
-                <a href="">Soon To Come</a>
-                <div class="list">
-                    <ul class="description">
-                        <li>Soon To Come</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+            </div> 
+            <p class="footer__githubio-link">
+                --------------------------------------------------- <br>
+                <!-- https://rloui.github.io/roger_louisaire/ -->I
+            </p>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script> -->
+        <script type="text/javascript" src="js/particles.js"></script>
+        <!-- <script type="text/javascript" src="/js/particles.min.js"></script> -->
+        <script type="text/javascript" src="js/particles_app.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
     </body>
-
-    <a href="https://github.com/Rloui">Github</a>
-    <a href="www.linkedin.com/in/rogerlouisaire">LinkedIn</a>
-    <a href="Rogerlouisaire@gmail.com">Email</a>
-</div>
 </html>
+
+<!-- <section class="gird-test">
+    <div class="row">
+        <div class="col-1-of-2">
+            Col 1 of 2
+        </div>
+        <div class="col-1-of-2">
+            Col 1 of 2
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-1-of-3">
+            Col 1 of 3
+        </div>
+        <div class="col-1-of-3">
+            Col 1 of 3
+        </div>
+        <div class="col-1-of-3">
+            Col 1 of 3
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-1-of-3">
+            Col 1 of 3
+        </div>
+        <div class="col-2-of-3">
+            Col 2 of 3
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-1-of-4">
+            Col 1 of 4
+        </div>
+        <div class="col-1-of-4">
+            Col 1 of 4
+        </div>
+        <div class="col-1-of-4">
+            Col 1 of 4
+        </div>
+        <div class="col-1-of-4">
+            Col 1 of 4
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-1-of-4">
+            Col 1 of 4
+        </div>
+        <div class="col-1-of-4">
+            Col 1 of 4
+        </div>
+        <div class="col-2-of-4">
+            Col 2 of 4
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-1-of-4">
+            Col 1 of 4
+        </div>
+        <div class="col-3-of-4">
+            Col 3 of 4
+        </div>
+    </div>
+</section> -->

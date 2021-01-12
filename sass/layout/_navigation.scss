@@ -1,0 +1,45 @@
+.navigation {
+
+
+    &__nav {
+        height: 12vh;
+        position: relative;
+    }
+
+    &__list {
+        list-style: none;
+        position: absolute;
+        right: 0;
+        vertical-align: text-bottom;
+        margin-top: 5rem;
+    }
+    &__item {
+        display: inline-block;
+        margin-right: 7rem;
+
+        &:last-child {
+            margin-right: 12rem;
+        }
+    }
+
+    &__link {
+
+        &:link,
+        &:visited {
+            text-decoration: none;
+            color: $color-text-secondary;
+            font-size: 1.4rem;
+            text-transform: uppercase;
+            padding: .8rem 0;
+            border-bottom: 1px solid transparent;
+            transition: border-bottom 0.2s;
+        }
+
+        &:hover,
+        &:active {
+            border-bottom: 2px solid $color-secondary;
+        }
+
+        
+    }
+}
