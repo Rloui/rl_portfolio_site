@@ -19,9 +19,8 @@
         &:hover {
             .resume-contact__photo {
                 transform: translateY(-3px);
-                filter: blur(.4px);
                 // background-image: linear-gradient( rgba($color-background-light, .3), rgba($color-black, .6) 0%), url(/img/resume_screenshot.png);
-                background-image: url("../img/resume_screenshot.png");
+                background-image: url("../img/resume-updated-screenshot.png");
 
             }
 
@@ -37,7 +36,8 @@
         height: 100%;
         box-shadow: 0 1rem 2rem rgba($color-black, .4);
         // background-image: url(/img/resume_screenshot.png);
-        background-image: linear-gradient( rgba($color-background-light, .3), rgba($color-black, .2) 0%), url("../img/resume_screenshot.png");
+        background-image: linear-gradient( rgba($color-background-light, .3), rgba($color-black, .2) 0%), url("../img/resume-updated-screenshot.png");
+        filter: blur(.4px);
 
         background-size: cover;
         border-radius: 3px;
