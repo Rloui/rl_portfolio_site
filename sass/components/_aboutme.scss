@@ -1,0 +1,19 @@
+.aboutme {
+    text-align: center;
+    position: relative;
+
+    &__text {
+        text-align: center;
+    }
+
+    &__paragraph {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    &__photo {
+        width: 80%;
+        border-radius: 1rem;
+        box-shadow: 0 1rem 2rem rgba($color-black, .2);
+    }
+}

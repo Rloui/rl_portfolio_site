@@ -1,0 +1,79 @@
+.footer {
+    background-color: $color-background-dark;
+    padding: 10rem 0 0 0;
+    font-size: 1.4rem;
+    color: $color-text-secondary;
+
+    &__logo-box {
+        text-align: center;
+        margin-bottom: 6rem;
+    }
+
+    &__logo {
+        width: 15rem;
+        height: auto;
+    }
+
+    &__copyright {
+        text-align: center;
+        margin-bottom: 4rem;
+        color: #555;
+    }
+
+    &__navigation {
+
+    }
+
+    &__list {
+        list-style: none;
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    &__item {
+        display: inline-block;
+        
+        &:not(:last-child) {
+            margin-right: 3rem;
+        }
+    }
+
+    &__link {
+
+        &:link,
+        &:visited {
+            padding: 1.25rem 1.5rem;
+            background-color: #222;
+            color: $color-text-primary;
+            text-decoration: none;
+            text-transform: uppercase;
+            border-radius: 3px;
+            transition: all 1s;
+        }
+
+        &:hover,
+        &:active {
+            box-shadow: 0 1rem 1.5rem rgba($color-black, .2);
+            transform: translateY(-2px);
+        }
+
+        &-linkedin:hover {
+            color: $color-text-secondary;
+            background-color: #2867B2;
+        }
+
+        &-github:hover {
+            color: #211F1F;
+            background-color: #FFFFFF;
+        }
+    }
+
+    &__icon {
+        transform: translateY(6px);
+        margin-right: 1rem;
+    }
+
+    &__githubio-link {
+        color: $color-background-dark;
+    }
+}

@@ -1,0 +1,33 @@
+.section-technologies {
+
+    &__image-flexbox {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        // flex-wrap: wrap;
+
+        &:not(:last-child) {
+            margin-bottom: 15rem;
+        }
+    }
+
+    &__image-holder {
+        width: 10rem;
+        height: 10rem;
+        text-align: center;
+        font-size: $default-font-size;
+        transition: all .2s;
+        // display: block;
+
+        &:hover {
+            transform: translateY(-2px);
+        }
+
+    }
+
+    &__image {
+        width: 100%;
+    }
+
+
+}

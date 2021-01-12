@@ -1,0 +1,30 @@
+.section__about {
+    background-color: $color-background-light;
+    // background-color: $color-black;
+    padding: 10rem 0 21rem 0;
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+    margin-bottom: -6rem;
+}
+
+.section-tech-summary {
+    background-color: $color-background-home;
+    padding: 20rem 0;
+}
+
+.section-technologies {
+    background-color: $color-white;
+    // background-color: $color-black;
+    padding: 12rem 0 20rem 0;
+    clip-path: polygon(0 6%, 100% 0, 100% 100%, 0 100%);
+    margin-top: -7rem;
+}
+
+.section-projects {
+    background-color: $color-background-light;
+    padding: 5rem 0 30rem 0;
+}
+
+.section-resume-contact {
+    background-color: $color-background-home;
+    padding: 10rem 0 15rem 0;
+}
