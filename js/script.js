@@ -42,4 +42,14 @@ $(function() {
 				}
 			})
 	})
+
+	$('.js--section-about').waypoint(function(direction){
+		if (direction == 'down') {
+			$('.navigation').addClass('sticky')
+		} else {
+			$('.navigation').removeClass('sticky')
+		}
+	}, {
+		offset: '60px'
+	})
 })
