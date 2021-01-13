@@ -14,12 +14,15 @@
 
     <title>Roger Louisaire | Full Stack Engineer</title>
 </head>
-    <body>
+    <body id="home">
 
         <header class="header" id="particles-js">
             <div class="navigation">
-                <div class="header__logo-box">
+                <div class="header__logo-box header__logo-box-blue">    
                     <img src="img/rl_logo-white.svg" alt="Logo" class="header__logo-white">
+                    <a href="#home">
+                        <img src="img/rl_logo_blue.svg" alt="Logo" class="header__logo-blue">
+                    </a>
                 </div>
                 <ul class="navigation__list">
                     <li class="navigation__item"><a href="#about" class="navigation__link">About</a></li>
@@ -43,7 +46,7 @@
 
         <main>
 
-            <section class="section__about" id="about">
+            <section class="section-about js--section-about" id="about">
                 <div class="u-center-text u-margin-bottom-big">
                     <h2 class="heading-secondary">
                         About Me
@@ -307,7 +310,7 @@
 
         <footer class="footer">
             <div class="footer__logo-box">
-                <a href="#"><img src="img/rl_logo_gradient.svg" alt="RL Logo" class="footer__logo"></a>
+                <a href="#home"><img src="img/rl_logo-white.svg" alt="RL Logo" class="footer__logo"></a>
             </div>
             <div class="row">
                 <p class="footer__copyright">
@@ -330,6 +333,7 @@
         <script type="text/javascript" src="js/particles.js"></script>
         <!-- <script type="text/javascript" src="/js/particles.min.js"></script> -->
         <script type="text/javascript" src="js/particles_app.js"></script>
+        <script type="text/javascript" src="js/vendor/jquery.waypoints.min.js"></script>
         <script type="text/javascript" src="js/script.js"></script>
     </body>
 </html>

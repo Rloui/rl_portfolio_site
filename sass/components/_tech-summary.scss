@@ -13,7 +13,8 @@
         color: $color-text-secondary;
 
         .tech-summary__list {
-            background-image: linear-gradient(to bottom,rgba($color-white, 1) 50%, rgba($color-secondary-light, .3));
+            // background-image: linear-gradient(to bottom,rgba($color-white, 1) 50%, rgba($color-secondary-light, .3));
+            background-color: rgba($color-white, 1);
         }
 
         .tech-summary__icon {
@@ -28,7 +29,8 @@
         font-size: $default-font-size;
         text-align: center;
         box-shadow: 0 1rem 3rem rgba($color-black, .2);
-        background-image: linear-gradient(to bottom,rgba($color-white, 1) 50%, rgba($color-primary-light, .3));
+        // background-image: linear-gradient(to bottom,rgba($color-white, .9) 50%, rgba($color-text-primary, .3));
+        background-color: rgba($color-white, .9);
         border-radius: 3px;
     }
 

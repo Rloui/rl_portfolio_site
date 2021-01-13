@@ -12,6 +12,11 @@
         height: 4rem;
     }
 
+    &__logo-blue {
+        display: none;
+        height: 3rem;
+    }
+
     &__text-box {
         @include center;
         text-align: center;
