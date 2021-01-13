@@ -1,3 +1,14 @@
+.parent:hover > * .child img {
+    transform: scale(1);
+    
+}
+.parent:hover > * .child:hover {
+    .app-screenshot__back {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
 .app-screenshot {
 
     &__flex {
@@ -14,23 +25,15 @@
         width: 43rem;
         height: 24rem;
         text-align: center;
-
-        &:hover {
-            .app-screenshot__back {
-                opacity: 1;
-                visibility: visible;
-            }
-
-            // .app-screenshot__photo {
-            //     filter: saturate(80%) brightness(60%);
-            // }
-        }
     }
 
     &__photo {
         width: 100%;
         border-radius: 3px;
         box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+        transform: scale(.98);
+        transition: all 1s;
+
     }
 
     &__back {
@@ -42,16 +45,12 @@
         position: relative;
         opacity: 0;
         visibility: hidden;
-        transition: all .5s;
+        transition: all .8s;
 
         &-lang {
             color: $color-primary;
             text-align: center;
             padding-top: 3rem;
-            // position: absolute;
-            // top: 2rem;
-            // left: 50%;
-            // // transform: translateX(-50%);
         }
 
         &-summary {
@@ -64,7 +63,7 @@
 
         &-link-live {
             position: absolute;
-            top: 8rem;
+            top: 6rem;
         }
     }
 }

@@ -221,9 +221,12 @@ body {
     background-color: #C49B14; }
 
 .link--red {
-  background-color: #C41423;
-  color: #eee;
-  font-size: 1.8rem; }
+  background-color: #fcfcff;
+  color: #777;
+  font-size: 1.8rem;
+  border: 2px solid #C41423; }
+  .link--red:hover {
+    background-color: #C41423; }
 
 .link:hover {
   color: #eee;
@@ -239,6 +242,13 @@ body {
 #particles-js {
   background-color: rgba(11, 96, 224, 0.9); }
 
+.parent:hover > * .child img {
+  transform: scale(1); }
+
+.parent:hover > * .child:hover .app-screenshot__back {
+  opacity: 1;
+  visibility: visible; }
+
 .app-screenshot__flex {
   display: flex;
   flex-direction: row;
@@ -250,14 +260,13 @@ body {
   width: 43rem;
   height: 24rem;
   text-align: center; }
-  .app-screenshot__container:hover .app-screenshot__back {
-    opacity: 1;
-    visibility: visible; }
 
 .app-screenshot__photo {
   width: 100%;
   border-radius: 3px;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4); }
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  transform: scale(0.98);
+  transition: all 1s; }
 
 .app-screenshot__back {
   background-color: #fcfcff;
@@ -268,7 +277,7 @@ body {
   position: relative;
   opacity: 0;
   visibility: hidden;
-  transition: all .5s; }
+  transition: all .8s; }
   .app-screenshot__back-lang {
     color: #001ac4;
     text-align: center;
@@ -280,7 +289,7 @@ body {
     margin-top: 2rem; }
   .app-screenshot__back-link-live {
     position: absolute;
-    top: 8rem; }
+    top: 6rem; }
 
 .resume-contact {
   text-align: center;
