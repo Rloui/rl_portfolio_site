@@ -1,5 +1,5 @@
+// Main Navi
 .navigation {
-
 
     &__nav {
         height: 12vh;
@@ -42,4 +42,13 @@
 
         
     }
+}
+
+// Sticky Navi
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba($color-white, 0.98);
 }
