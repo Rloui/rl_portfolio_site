@@ -202,6 +202,40 @@ body {
 .btn__image {
   position: absolute; }
 
+.link, .link:link, .link:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.6rem;
+  padding: .5rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative; }
+
+.link--yellow {
+  background-color: #fcfcff;
+  color: #777;
+  font-size: 1.8rem;
+  border: 2px solid #C49B14; }
+  .link--yellow:hover {
+    background-color: #C49B14; }
+
+.link--red {
+  background-color: #C41423;
+  color: #eee;
+  font-size: 1.8rem; }
+
+.link:hover {
+  color: #eee;
+  transform: translateY(-3px);
+  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.2); }
+
+.link:active, .link:focus {
+  outline: none;
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  background-color: #C44314; }
+
 #particles-js {
   background-color: rgba(11, 96, 224, 0.9); }
 
@@ -216,11 +250,37 @@ body {
   width: 43rem;
   height: 24rem;
   text-align: center; }
+  .app-screenshot__container:hover .app-screenshot__back {
+    opacity: 1;
+    visibility: visible; }
 
 .app-screenshot__photo {
   width: 100%;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4); }
+
+.app-screenshot__back {
+  background-color: #fcfcff;
+  width: 43rem;
+  height: 25rem;
+  transform: translateY(-25rem);
+  border-radius: 3px;
+  position: relative;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .5s; }
+  .app-screenshot__back-lang {
+    color: #001ac4;
+    text-align: center;
+    padding-top: 3rem; }
+  .app-screenshot__back-summary {
+    text-align: center;
+    color: #777;
+    font-size: 1.6rem;
+    margin-top: 2rem; }
+  .app-screenshot__back-link-live {
+    position: absolute;
+    top: 8rem; }
 
 .resume-contact {
   text-align: center;
@@ -246,7 +306,7 @@ body {
     width: 100%;
     height: 100%;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
-    background-image: linear-gradient(rgba(252, 252, 255, 0.3), rgba(0, 0, 0, 0.2) 0%), url("../img/resume-updated-screenshot.png");
+    background-image: linear-gradient(rgba(252, 252, 255, 0.3), rgba(0, 0, 0, 0.05) 0%), url("../img/resume-updated-screenshot.png");
     filter: blur(0.4px);
     background-size: cover;
     border-radius: 3px;
