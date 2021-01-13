@@ -100,14 +100,18 @@
 
         &:hover {
             background-color: $color-accent-2;
-
         }
     }
 
     &--red {
-        background-color: $color-accent-1;
-        color: $color-text-secondary;
+        background-color: $color-background-light;
+        color: $color-text-primary;
         font-size: $default-font-size;
+        border: 2px solid $color-accent-1;
+
+        &:hover {
+            background-color: $color-accent-1;
+        }
     }
 
     &:hover {
