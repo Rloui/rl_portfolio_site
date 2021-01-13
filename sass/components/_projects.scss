@@ -14,11 +14,57 @@
         width: 43rem;
         height: 24rem;
         text-align: center;
+
+        &:hover {
+            .app-screenshot__back {
+                opacity: 1;
+                visibility: visible;
+            }
+
+            // .app-screenshot__photo {
+            //     filter: saturate(80%) brightness(60%);
+            // }
+        }
     }
 
     &__photo {
         width: 100%;
         border-radius: 3px;
         box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+    }
+
+    &__back {
+        background-color: $color-background-light;
+        width: 43rem;
+        height: 25rem;
+        transform: translateY(-25rem);
+        border-radius: 3px;
+        position: relative;
+        opacity: 0;
+        visibility: hidden;
+        transition: all .5s;
+
+        &-lang {
+            color: $color-primary;
+            text-align: center;
+            padding-top: 3rem;
+            // position: absolute;
+            // top: 2rem;
+            // left: 50%;
+            // // transform: translateX(-50%);
+        }
+
+        &-summary {
+            text-align: center;
+            color: $color-text-primary;
+            font-size: 1.6rem;
+            margin-top: 2rem;
+
+        }
+
+        &-link-live {
+            position: absolute;
+            top: 8rem;
+        }
     }
 }
