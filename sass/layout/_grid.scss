@@ -1,9 +1,17 @@
 .row {
     max-width: $grid-width;
     margin: 0 auto;
+
+    @include respond(tab-land-mid) {
+        // max-width: 90rem;
+    }
     
     &:not(:last-child) {
         margin-bottom: $gutter-vertical;
+
+        @include respond(tab-land-mid) {
+            margin-bottom: 6rem;
+        }
     }
 
     @include clearfix
@@ -14,6 +22,10 @@
 
         &:not(:last-child) {
             margin-right: $gutter-horizontal;
+            
+            @include respond(tab-land-mid) {
+                // margin-right: 4rem;
+            }
         }
     }
 

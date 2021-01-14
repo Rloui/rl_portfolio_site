@@ -1,3 +1,17 @@
+/*
+0 - 600px:          Phone
+600 - 900px:        Tablet protrait
+900 - 1200px:       Tablet landscape
+[1200 - 1800px]:    is where our normal styles apply
+1800px + :          Big desktop
+$breakpoint arguement choices:
+-phone
+-tab-port
+-tab-land
+-big-desktop
+ORDER Base + typography > general layout + grid > page layout > components
+1em = 16px
+*/
 *,
 *::before,
 *::after {
@@ -5,15 +19,29 @@
   padding: 0;
   box-sizing: inherit; }
 
+html,
+body {
+  overflow-x: hidden; }
+
 html {
   font-size: 62.5%; }
+  @media (max-width: 103.125em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 84.375em) {
+    html {
+      font-size: 50%; } }
+  @media (max-width: 65.625em) {
+    html {
+      font-size: 46.875%; } }
 
 body {
   font-family: "Montserrat", "Lato", "Sans-Serif";
   font-weight: 400;
   line-height: 1.7;
   color: #777;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  margin: 0; }
 
 @keyframes moveInBottom {
   0% {
@@ -51,7 +79,8 @@ body {
   font-family: "Montserrat", "Lato", "Sans-Serif";
   font-weight: 400;
   line-height: 1.7;
-  color: #777; }
+  color: #777;
+  margin: 0; }
 
 .heading-primary {
   color: #eee;
@@ -61,6 +90,14 @@ body {
     display: block;
     letter-spacing: 1.2rem;
     animation: fadeIn 3s ease-out; }
+    @media (max-width: 75em) {
+      .heading-primary--main {
+        font-size: 6.2rem;
+        letter-spacing: 1.1rem; } }
+    @media (max-width: 65.625em) {
+      .heading-primary--main {
+        font-size: 5.5rem;
+        letter-spacing: 1; } }
   .heading-primary--sub {
     font-size: 3.6rem;
     font-weight: 300;
@@ -74,6 +111,14 @@ body {
   font-weight: 300;
   display: inline-block;
   letter-spacing: 1.2; }
+  @media (max-width: 75em) {
+    .heading-secondary {
+      font-size: 5.4rem;
+      letter-spacing: 1.1; } }
+  @media (max-width: 65.625em) {
+    .heading-secondary {
+      font-size: 4.7rem;
+      letter-spacing: 1; } }
   .heading-secondary--resume-contact {
     color: #eee; }
   .heading-secondary::after {
@@ -89,6 +134,10 @@ body {
   font-size: 3.2rem;
   display: inline-block;
   font-weight: 400; }
+  @media (max-width: 65.625em) {
+    .heading-tertiary {
+      font-size: 3rem;
+      letter-spacing: 1; } }
   .heading-tertiary__tech-summary {
     font-size: 3.2rem;
     display: inline-block;
@@ -259,6 +308,10 @@ body {
   width: 43rem;
   height: 24rem;
   text-align: center; }
+  @media (max-width: 65.625em) {
+    .app-screenshot__container {
+      width: 38rem;
+      height: 19rem; } }
 
 .app-screenshot__photo {
   width: 100%;
@@ -378,6 +431,10 @@ body {
     margin: 0 auto;
     height: 10rem;
     width: 10rem; }
+    @media (max-width: 65.625em) {
+      .tech-summary__image-container {
+        height: 8rem;
+        width: 8rem; } }
   .tech-summary__icon {
     width: 100%;
     transition: all .5s; }
@@ -433,6 +490,9 @@ body {
   margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
+    @media (max-width: 65.625em) {
+      .row:not(:last-child) {
+        margin-bottom: 6rem; } }
   .row::after {
     content: "";
     display: table;
@@ -482,8 +542,14 @@ body {
 .navigation__item {
   display: inline-block;
   margin-right: 7rem; }
+  @media (max-width: 65.625em) {
+    .navigation__item {
+      margin-right: 4rem; } }
   .navigation__item:last-child {
     margin-right: 12rem; }
+    @media (max-width: 65.625em) {
+      .navigation__item:last-child {
+        margin-right: 8rem; } }
 
 .navigation__link:link, .navigation__link:visited {
   text-decoration: none;
