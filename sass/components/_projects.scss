@@ -25,6 +25,11 @@
         width: 43rem;
         height: 24rem;
         text-align: center;
+
+        @include respond(tab-land-mid) {
+            width: 38rem;
+            height: 19rem;
+        }
     }
 
     &__photo {
