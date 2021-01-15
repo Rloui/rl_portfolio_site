@@ -402,6 +402,10 @@ body {
       top: -30rem;
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
       transition: all .5s; }
+      @media (max-width: 56.25em) {
+        .resume-contact__image-container-link {
+          opacity: 1;
+          visibility: visible; } }
     .resume-contact__image-container:hover .resume-contact__photo {
       transform: translateY(-3px);
       background-image: url("../img/resume-updated-screenshot.png"); }
