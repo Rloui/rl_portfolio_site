@@ -6,6 +6,12 @@
         position: absolute;
         top: 4rem;
         left: 12rem;
+
+        @include respond(phone) {
+            // @include center;
+            top: 4rem;
+            left: 2rem;
+        }
     }
 
     &__logo-white {

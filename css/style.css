@@ -37,6 +37,9 @@ html {
   @media (max-width: 56.25em) {
     html {
       font-size: 37.25%; } }
+  @media (max-width: 37.5em) {
+    html {
+      font-size: 31.25%; } }
 
 body {
   font-family: "Montserrat", "Lato", "Sans-Serif";
@@ -180,9 +183,15 @@ body {
 
 .u-margin-bottom-medium {
   margin-bottom: 4rem; }
+  @media (max-width: 37.5em) {
+    .u-margin-bottom-medium {
+      margin-bottom: 1rem; } }
 
 .u-margin-bottom-big {
   margin-bottom: 8rem; }
+  @media (max-width: 37.5em) {
+    .u-margin-bottom-big {
+      margin-bottom: 4rem; } }
 
 .u-margin-top-small {
   margin-top: 3rem; }
@@ -198,6 +207,9 @@ body {
   position: relative; }
   .aboutme__text {
     text-align: center; }
+    @media (max-width: 56.25em) {
+      .aboutme__text {
+        margin-top: 5rem; } }
   .aboutme__paragraph {
     width: 85%;
     margin: 0 auto; }
@@ -320,20 +332,27 @@ body {
 
 .app-screenshot__div-holder {
   text-align: center;
-  margin-right: 3rem;
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
   position: relative; }
+  @media (max-width: 56.25em) {
+    .app-screenshot__div-holder {
+      margin-right: 0; } }
+  @media (max-width: 37.5em) {
+    .app-screenshot__div-holder {
+      margin-top: 5rem; } }
 
 .app-screenshot__container {
   width: 43rem;
   height: 24rem; }
-  @media (max-width: 65.625em) {
-    .app-screenshot__container {
-      width: 38rem;
-      height: 19rem; } }
   @media (max-width: 56.25em) {
     .app-screenshot__container {
-      width: 33rem;
-      height: 14rem; } }
+      width: 47rem;
+      height: 28rem; } }
+  @media (max-width: 37.5em) {
+    .app-screenshot__container {
+      width: 62rem;
+      height: 43rem; } }
 
 .app-screenshot__photo {
   width: 100%;
@@ -373,6 +392,9 @@ body {
     width: 40rem;
     height: 50rem;
     margin: 0 auto; }
+    @media (max-width: 56.25em) {
+      .resume-contact__image-container {
+        margin-bottom: 5rem; } }
     .resume-contact__image-container-link {
       opacity: 0;
       visibility: hidden;
@@ -406,6 +428,9 @@ body {
   .resume-contact p {
     margin-top: 5rem;
     text-align: center; }
+    @media (max-width: 56.25em) {
+      .resume-contact p {
+        margin-top: 1rem; } }
   .resume-contact h3 {
     color: #eee; }
 
@@ -434,6 +459,10 @@ body {
   background-color: transparent;
   border-radius: 3px;
   transition: all .5s; }
+  @media (max-width: 56.25em) {
+    .tech-summary {
+      width: 90%;
+      margin: 3rem auto; } }
   .tech-summary:hover {
     background-color: #ea6332;
     transform: translateY(-2px);
@@ -514,6 +543,9 @@ body {
 .row {
   max-width: 114rem;
   margin: 0 auto; }
+  @media (max-width: 56.25em) {
+    .row {
+      max-width: 99rem; } }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
     @media (max-width: 65.625em) {
@@ -527,6 +559,9 @@ body {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
+    @media (max-width: 56.25em) {
+      .row [class^="col-"] {
+        width: 100% !important; } }
   .row .col-1-of-2 {
     width: calc((100% - 6rem) / 2); }
   .row .col-1-of-3 {
@@ -546,6 +581,10 @@ body {
     position: absolute;
     top: 4rem;
     left: 12rem; }
+    @media (max-width: 37.5em) {
+      .header__logo-box {
+        top: 4rem;
+        left: 2rem; } }
   .header__logo-white {
     height: 4rem; }
   .header__logo-blue {
@@ -564,6 +603,9 @@ body {
   right: 0;
   vertical-align: text-bottom;
   margin-top: 5rem; }
+  @media (max-width: 37.5em) {
+    .navigation__list {
+      margin-top: 7rem; } }
 
 .navigation__item {
   display: inline-block;
@@ -571,11 +613,17 @@ body {
   @media (max-width: 65.625em) {
     .navigation__item {
       margin-right: 4rem; } }
+  @media (max-width: 37.5em) {
+    .navigation__item {
+      margin-right: 3rem; } }
   .navigation__item:last-child {
     margin-right: 12rem; }
     @media (max-width: 65.625em) {
       .navigation__item:last-child {
         margin-right: 8rem; } }
+    @media (max-width: 37.5em) {
+      .navigation__item:last-child {
+        margin-right: 1rem; } }
 
 .navigation__link:link, .navigation__link:visited {
   text-decoration: none;
@@ -615,20 +663,40 @@ body {
   padding: 10rem 0 21rem 0;
   clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
   margin-bottom: -6rem; }
+  @media (max-width: 56.25em) {
+    .section-about {
+      padding: 5rem 0 19rem 0; } }
 
 .section-tech-summary {
   background-color: rgba(11, 96, 224, 0.9);
   padding: 20rem 0; }
+  @media (max-width: 56.25em) {
+    .section-tech-summary {
+      padding: 15rem 0;
+      margin-top: -15rem; } }
 
 .section-technologies {
   background-color: #fff;
   padding: 12rem 0 20rem 0;
   clip-path: polygon(0 6%, 100% 0, 100% 100%, 0 100%);
   margin-top: -7rem; }
+  @media (max-width: 65.625em) {
+    .section-technologies {
+      padding-bottom: 15rem; } }
+  @media (max-width: 56.25em) {
+    .section-technologies {
+      padding-top: 5rem; } }
 
 .section-projects {
   background-color: #fcfcff;
   padding: 5rem 0 30rem 0; }
+  @media (max-width: 65.625em) {
+    .section-projects {
+      padding-bottom: 20rem; } }
+  @media (max-width: 56.25em) {
+    .section-projects {
+      padding-top: 2.5rem;
+      padding-bottom: 15rem; } }
 
 .section-resume-contact {
   background-color: rgba(11, 96, 224, 0.9);

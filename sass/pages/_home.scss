@@ -4,11 +4,20 @@
     padding: 10rem 0 21rem 0;
     clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
     margin-bottom: -6rem;
+
+    @include respond(tab-port) {
+        padding: 5rem 0 19rem 0;
+    }
 }
 
 .section-tech-summary {
     background-color: $color-background-home;
     padding: 20rem 0;
+
+    @include respond(tab-port) {
+        padding: 15rem 0;
+        margin-top: -15rem;
+    }
 }
 
 .section-technologies {
@@ -17,11 +26,28 @@
     padding: 12rem 0 20rem 0;
     clip-path: polygon(0 6%, 100% 0, 100% 100%, 0 100%);
     margin-top: -7rem;
+
+    @include respond(tab-land-mid) {
+        padding-bottom: 15rem;
+    }
+
+    @include respond(tab-port) {
+        padding-top: 5rem;
+    }
 }
 
 .section-projects {
     background-color: $color-background-light;
     padding: 5rem 0 30rem 0;
+
+    @include respond(tab-land-mid) {
+        padding-bottom: 20rem;
+    }
+
+    @include respond(tab-port) {
+        padding-top: 2.5rem;
+        padding-bottom: 15rem;
+    }
 }
 
 .section-resume-contact {

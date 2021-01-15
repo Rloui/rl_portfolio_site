@@ -7,6 +7,10 @@
         height: 50rem;
         margin: 0 auto;
 
+        @include respond(tab-port) {
+            margin-bottom: 5rem;
+        }
+
         &-link {
             opacity: 0;
             visibility: hidden;
@@ -62,6 +66,10 @@
     p {
         margin-top: 5rem;
         text-align: center;
+
+        @include respond(tab-port) {
+            margin-top: 1rem;
+        }
     }
 
     h3 {
