@@ -11,6 +11,9 @@
         @include respond(phone) {
             margin-top: 8rem;
         }
+        @include respond(phone-small) {
+            margin-top: 9rem;
+        }
     }
 
     &__item {
@@ -71,10 +74,17 @@
     box-shadow: 0 .5rem 1rem rgba($color-black, .2);
     z-index: 2000;
 
+    @include respond(phone-small) {
+        height: 9rem;
+    }
+
     .navigation {
 
         &__list {
             margin-top: 2rem;
+            @include respond(phone-small) {
+                margin-top: 6rem;
+            }
         }
 
         &__link {
