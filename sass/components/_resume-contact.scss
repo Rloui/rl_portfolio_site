@@ -18,6 +18,11 @@
             top: -30rem;
             box-shadow: 0 1rem 2rem rgba($color-black, .2);
             transition: all .5s;
+
+            @include respond(tab-port) {
+                opacity: 1;
+                visibility: visible;
+            }
         }
 
         &:hover {

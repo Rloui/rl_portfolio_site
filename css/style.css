@@ -37,6 +37,9 @@ html {
   @media (max-width: 56.25em) {
     html {
       font-size: 37.25%; } }
+  @media (max-width: 23.4375em) {
+    html {
+      font-size: 31.25%; } }
 
 body {
   font-family: "Montserrat", "Lato", "Sans-Serif";
@@ -399,6 +402,10 @@ body {
       top: -30rem;
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
       transition: all .5s; }
+      @media (max-width: 56.25em) {
+        .resume-contact__image-container-link {
+          opacity: 1;
+          visibility: visible; } }
     .resume-contact__image-container:hover .resume-contact__photo {
       transform: translateY(-3px);
       background-image: url("../img/resume-updated-screenshot.png"); }
@@ -603,6 +610,9 @@ body {
   @media (max-width: 37.5em) {
     .navigation__list {
       margin-top: 8rem; } }
+  @media (max-width: 23.4375em) {
+    .navigation__list {
+      margin-top: 9rem; } }
 
 .navigation__item {
   display: inline-block;
@@ -643,8 +653,14 @@ body {
   background-color: rgba(255, 255, 255, 0.98);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
   z-index: 2000; }
+  @media (max-width: 23.4375em) {
+    .sticky {
+      height: 9rem; } }
   .sticky .navigation__list {
     margin-top: 2rem; }
+    @media (max-width: 23.4375em) {
+      .sticky .navigation__list {
+        margin-top: 6rem; } }
   .sticky .navigation__link:link, .sticky .navigation__link:visited {
     color: #777;
     padding: 1.4rem 0; }
