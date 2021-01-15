@@ -29,6 +29,10 @@
             font-size: 5.5rem;
             letter-spacing: 1;
         }
+
+        @include respond(tab-port) {
+            font-size: 4.3rem;
+        }
         
         
         animation: fadeIn 3s ease-out;
@@ -42,6 +46,11 @@
         margin-top: 3.8rem;
 
         animation: fadeIn 3s ease-out;
+
+        @include respond(tab-port) {
+            font-size: 3rem;
+            margin-top: 2rem;
+        }
     }
 }
 
@@ -60,6 +69,10 @@
     @include respond(tab-land-mid) {
         font-size: 4.7rem;
         letter-spacing: 1;
+    }
+
+    @include respond(tab-port) {
+        // font-size: 30rem;
     }
 
     &--resume-contact {
@@ -93,6 +106,10 @@
         display: inline-block;
         font-weight: 400;
         color: $color-text-secondary;
+
+        @include respond(tab-port) {
+            font-size: 2.9rem;
+        }
     }
 
     &::after {

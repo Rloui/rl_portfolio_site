@@ -71,6 +71,10 @@
     &__icon {
         transform: translateY(6px);
         margin-right: 1rem;
+
+        @include respond(small-laptop) {
+            transform: translateY(9px);
+        }
     }
 
     &__githubio-link {

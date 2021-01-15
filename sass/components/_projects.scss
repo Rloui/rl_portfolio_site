@@ -30,6 +30,10 @@
             width: 38rem;
             height: 19rem;
         }
+        @include respond(tab-port) {
+            width: 33rem;
+            height: 14rem;
+        }
     }
 
     &__photo {

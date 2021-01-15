@@ -34,6 +34,9 @@ html {
   @media (max-width: 65.625em) {
     html {
       font-size: 46.875%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 37.25%; } }
 
 body {
   font-family: "Montserrat", "Lato", "Sans-Serif";
@@ -98,12 +101,19 @@ body {
       .heading-primary--main {
         font-size: 5.5rem;
         letter-spacing: 1; } }
+    @media (max-width: 56.25em) {
+      .heading-primary--main {
+        font-size: 4.3rem; } }
   .heading-primary--sub {
     font-size: 3.6rem;
     font-weight: 300;
     display: inline-block;
     margin-top: 3.8rem;
     animation: fadeIn 3s ease-out; }
+    @media (max-width: 56.25em) {
+      .heading-primary--sub {
+        font-size: 3rem;
+        margin-top: 2rem; } }
 
 .heading-secondary {
   font-size: 6.4rem;
@@ -143,6 +153,9 @@ body {
     display: inline-block;
     font-weight: 400;
     color: #eee; }
+    @media (max-width: 56.25em) {
+      .heading-tertiary__tech-summary {
+        font-size: 2.9rem; } }
   .heading-tertiary::after {
     content: "";
     display: block;
@@ -312,6 +325,10 @@ body {
     .app-screenshot__container {
       width: 38rem;
       height: 19rem; } }
+  @media (max-width: 56.25em) {
+    .app-screenshot__container {
+      width: 33rem;
+      height: 14rem; } }
 
 .app-screenshot__photo {
   width: 100%;
@@ -482,6 +499,9 @@ body {
   .footer__icon {
     transform: translateY(6px);
     margin-right: 1rem; }
+    @media (max-width: 84.375em) {
+      .footer__icon {
+        transform: translateY(9px); } }
   .footer__githubio-link {
     color: #333; }
 
