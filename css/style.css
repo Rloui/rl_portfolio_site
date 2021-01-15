@@ -353,6 +353,10 @@ body {
     .app-screenshot__container {
       width: 62rem;
       height: 43rem; } }
+  @media (max-width: 23.4375em) {
+    .app-screenshot__container {
+      width: 52rem;
+      height: 33rem; } }
 
 .app-screenshot__photo {
   width: 100%;

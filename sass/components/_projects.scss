@@ -61,6 +61,10 @@
             width: 62rem;
             height: 43rem;
         }
+        @include respond(phone-small) {
+            width: 52rem;
+            height: 33rem;
+        }
     }
 
     &__photo {
