@@ -2,7 +2,7 @@
     max-width: $grid-width;
     margin: 0 auto;
 
-    @include respond(tab-land-mid) {
+    @include respond(tab-port) {
         // max-width: 90rem;
     }
     
@@ -14,7 +14,7 @@
         }
     }
 
-    @include clearfix
+    @include clearfix;
 
     [class^="col-"] {
         // background-color: orangered;
@@ -22,10 +22,14 @@
 
         &:not(:last-child) {
             margin-right: $gutter-horizontal;
-            
-            @include respond(tab-land-mid) {
-                // margin-right: 4rem;
-            }
+
+            // @include respond(tab-port) {
+                // margin-right: 0 auto;
+            // }
+        }
+
+        @include respond(tab-port) {
+            // width: 100% !important;
         }
     }
 

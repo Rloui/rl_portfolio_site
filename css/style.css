@@ -34,6 +34,9 @@ html {
   @media (max-width: 65.625em) {
     html {
       font-size: 46.875%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 37.25%; } }
 
 body {
   font-family: "Montserrat", "Lato", "Sans-Serif";
@@ -98,12 +101,19 @@ body {
       .heading-primary--main {
         font-size: 5.5rem;
         letter-spacing: 1; } }
+    @media (max-width: 56.25em) {
+      .heading-primary--main {
+        font-size: 4.3rem; } }
   .heading-primary--sub {
     font-size: 3.6rem;
     font-weight: 300;
     display: inline-block;
     margin-top: 3.8rem;
     animation: fadeIn 3s ease-out; }
+    @media (max-width: 56.25em) {
+      .heading-primary--sub {
+        font-size: 3rem;
+        margin-top: 2rem; } }
 
 .heading-secondary {
   font-size: 6.4rem;
@@ -143,6 +153,9 @@ body {
     display: inline-block;
     font-weight: 400;
     color: #eee; }
+    @media (max-width: 56.25em) {
+      .heading-tertiary__tech-summary {
+        font-size: 2.9rem; } }
   .heading-tertiary::after {
     content: "";
     display: block;
@@ -300,21 +313,31 @@ body {
 .app-screenshot__flex {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+  flex-wrap: wrap; }
   .app-screenshot__flex:not(:last-child) {
-    margin-bottom: 20rem; }
+    margin-bottom: 5rem; }
+
+.app-screenshot__div-holder {
+  text-align: center;
+  margin-right: 3rem;
+  position: relative; }
 
 .app-screenshot__container {
   width: 43rem;
-  height: 24rem;
-  text-align: center; }
+  height: 24rem; }
   @media (max-width: 65.625em) {
     .app-screenshot__container {
       width: 38rem;
       height: 19rem; } }
+  @media (max-width: 56.25em) {
+    .app-screenshot__container {
+      width: 33rem;
+      height: 14rem; } }
 
 .app-screenshot__photo {
   width: 100%;
+  height: 100%;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
   transform: scale(0.98);
@@ -326,7 +349,7 @@ body {
   height: 25rem;
   transform: translateY(-25rem);
   border-radius: 3px;
-  position: relative;
+  position: absolute;
   opacity: 0;
   visibility: hidden;
   transition: all .8s; }
@@ -482,6 +505,9 @@ body {
   .footer__icon {
     transform: translateY(6px);
     margin-right: 1rem; }
+    @media (max-width: 84.375em) {
+      .footer__icon {
+        transform: translateY(9px); } }
   .footer__githubio-link {
     color: #333; }
 
@@ -607,3 +633,6 @@ body {
 .section-resume-contact {
   background-color: rgba(11, 96, 224, 0.9);
   padding: 10rem 0 15rem 0; }
+
+.scroll-to {
+  height: 6rem; }

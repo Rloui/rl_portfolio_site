@@ -22,11 +22,14 @@ html {
     @include respond(laptop) {  // width < 1650?
         font-size: 56.25%;    // 1rem = 9px; 9/16px = 56.25%
     }
-    @include respond(small-laptop) {  // width < 13500?
+    @include respond(small-laptop) {  // width < 1350?
         font-size: 50%;    // 1rem = 8px; 8/16px = 50%
     }
-    @include respond(tab-land-mid) {  // width < 13500?
+    @include respond(tab-land-mid) {  // width < 1050?
         font-size: 46.875%;    // 1rem = 7px; 7/16px = 50%
+    }
+    @include respond(tab-port) {  // width < 900?
+        font-size: 37.25%;    // 1rem = 6px; 6/16px = 37.5%
     }
 }
 
