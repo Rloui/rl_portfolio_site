@@ -464,7 +464,7 @@ body {
 
 .footer {
   background-color: #333;
-  padding: 10rem 0 0 0;
+  padding: 5rem 0 5rem 0;
   font-size: 1.4rem;
   color: #eee; }
   .footer__logo-box {
@@ -632,7 +632,7 @@ body {
 
 .section-resume-contact {
   background-color: rgba(11, 96, 224, 0.9);
-  padding: 10rem 0 15rem 0; }
+  padding: 5rem 0 10rem 0; }
 
 .scroll-to {
   height: 6rem; }
