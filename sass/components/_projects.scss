@@ -25,9 +25,23 @@
 
     &__div-holder {
         text-align: center;
-        margin-right: 3rem ;
+        margin-right: 1.5rem;
+        margin-left: 1.5rem;
         // border: 1px solid red;
         position: relative;
+
+        @include respond(small-laptop) {
+            // margin-right: 5.5rem;
+            // margin-left: 5.5rem;
+        }
+
+        @include respond(tab-port) {
+            margin-right: 0;
+        }
+
+        @include respond(phone) {
+            margin-top: 5rem;
+        }
     }
     
     &__container {
@@ -36,12 +50,16 @@
         // border: 1px solid purple;
 
         @include respond(tab-land-mid) {
-            width: 38rem;
-            height: 19rem;
+            // width: 38rem;
+            // height: 19rem;
         }
         @include respond(tab-port) {
-            width: 33rem;
-            height: 14rem;
+            width: 47rem;
+            height: 28rem;
+        }
+        @include respond(phone) {
+            width: 62rem;
+            height: 43rem;
         }
     }
 

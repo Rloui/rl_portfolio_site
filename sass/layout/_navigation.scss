@@ -7,6 +7,10 @@
         right: 0;
         vertical-align: text-bottom;
         margin-top: 5rem;
+
+        @include respond(phone) {
+            margin-top: 7rem;
+        }
     }
 
     &__item {
@@ -17,11 +21,19 @@
             margin-right: 4rem;
         }
 
+        @include respond(phone) {
+            margin-right: 3rem;
+        }
+
         &:last-child {
             margin-right: 12rem;
 
             @include respond(tab-land-mid) {
                 margin-right: 8rem;
+            }
+
+            @include respond(phone) {
+                margin-right: 1rem;
             }
         }
     }

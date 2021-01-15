@@ -3,7 +3,7 @@
     margin: 0 auto;
 
     @include respond(tab-port) {
-        // max-width: 90rem;
+        max-width: 99rem;
     }
     
     &:not(:last-child) {
@@ -23,13 +23,13 @@
         &:not(:last-child) {
             margin-right: $gutter-horizontal;
 
-            // @include respond(tab-port) {
-                // margin-right: 0 auto;
-            // }
+            @include respond(tab-port) {
+                // margin-right: 1rem
+            }
         }
 
         @include respond(tab-port) {
-            // width: 100% !important;
+            width: 100% !important;
         }
     }
 
