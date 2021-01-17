@@ -49,10 +49,6 @@
         height: 24rem;
         // border: 1px solid purple;
 
-        @include respond(tab-land-mid) {
-            // width: 38rem;
-            // height: 19rem;
-        }
         @include respond(tab-port) {
             width: 47rem;
             height: 28rem;
