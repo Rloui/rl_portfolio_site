@@ -47,6 +47,7 @@ body {
   line-height: 1.7;
   color: #777;
   box-sizing: border-box;
+  text-rendering: optimizeLegibility;
   margin: 0; }
 
 @keyframes moveInBottom {
@@ -428,7 +429,7 @@ body {
   .resume-contact__link {
     margin-top: 10rem;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
-    .resume-contact__link spanicon {
+    .resume-contact__link span {
       font-size: 3.5rem; }
   .resume-contact__text {
     width: 70%;

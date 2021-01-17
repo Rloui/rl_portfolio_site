@@ -42,5 +42,6 @@ body {
     line-height: 1.7;
     color: $color-text-primary;
     box-sizing: border-box;
+    text-rendering: optimizeLegibility;
     margin: 0;
 }
