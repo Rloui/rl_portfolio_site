@@ -20,7 +20,8 @@ The Organization:
 
 The Design:
 - [figma](https://www.figma.com/file/3c3BBiN0eX5nsZk2MCyt9C/Roger_Louisaire_Portfolio?node-id=112%3A119)
-- ![alt text](img/rl_logo_blue.svg "Logo Title Text 1")
+
+![alt text](img/rl_logo_blue.svg "Logo Title Text 1")
 
 Problems Encountered:
 - it was difficult determining where to start because there was a specific layout and specs that needed to me included. I used milanote and figma to organize my thoughts
