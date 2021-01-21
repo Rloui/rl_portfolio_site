@@ -27,9 +27,9 @@ Future Developments:
 The Organization:
 - [milanote](https://app.milanote.com/1KSWL71SSfTjdZ?p=bWDpSVl0gUy)
 
-![alt text](img/rl_portfolio_milanote "Milanote Image")
+![alt text](img/rl_portfolio_milanote.png "Milanote Image")
 
 The Design:
 - [figma](https://www.figma.com/file/3c3BBiN0eX5nsZk2MCyt9C/Roger_Louisaire_Portfolio?node-id=112%3A119)
 
-![alt text](img/rl_portfolio_figma "Figma Image")
+![alt text](img/rl_portfolio_figma.png "Figma Image")
