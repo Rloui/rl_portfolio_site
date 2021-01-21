@@ -23,8 +23,6 @@ The Organization:
 The Design:
 - [figma](https://www.figma.com/file/3c3BBiN0eX5nsZk2MCyt9C/Roger_Louisaire_Portfolio?node-id=112%3A119)
 ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png)
-(https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
 ![alt text](img/rl_logo_blue.svg "Logo Title Text 1")
 (img/rl_logo_blue.svg "Logo Title Text 1")
 
