@@ -17,14 +17,10 @@ Technologies used:
 
 The Organization:
 - [milanote](https://app.milanote.com/1KSWL71SSfTjdZ?p=bWDpSVl0gUy)
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
-
 
 The Design:
 - [figma](https://www.figma.com/file/3c3BBiN0eX5nsZk2MCyt9C/Roger_Louisaire_Portfolio?node-id=112%3A119)
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
-![alt text](img/rl_logo_blue.svg "Logo Title Text 1")
-(img/rl_logo_blue.svg "Logo Title Text 1")
+- ![alt text](img/rl_logo_blue.svg "Logo Title Text 1")
 
 Problems Encountered:
 - it was difficult determining where to start because there was a specific layout and specs that needed to me included. I used milanote and figma to organize my thoughts
